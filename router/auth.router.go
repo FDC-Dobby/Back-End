@@ -8,6 +8,9 @@ import (
 func auth(router *fiber.App) {
 	auth := router.Group("/auth")
 
+	auth.Get("/", func(c *fiber.Ctx) error {
+		return c.Status(200).SendString("Hello, Auth!")
+	})
 	auth.Post("/login", func(c *fiber.Ctx) error {
 		return controllers.Login(c)
 	})

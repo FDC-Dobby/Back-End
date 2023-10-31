@@ -7,6 +7,7 @@ func Initialize(router *fiber.App) {
 	index(router)
 	auth(router)
 	loc(router)
+	info(router)
 
 	router.Use(func(c *fiber.Ctx) error {
 		return c.Status(404).JSON(fiber.Map{

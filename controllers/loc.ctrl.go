@@ -177,10 +177,6 @@ func PostLoc(c *fiber.Ctx) error {
 			Review:    []string{json.Review},
 			CreatedAt: time.Now(),
 		}
-		return c.Status(409).JSON(fiber.Map{
-			"code":    409,
-			"message": "User already exists",
-		})
 	} else {
 		//user doesn't exist make new one
 
