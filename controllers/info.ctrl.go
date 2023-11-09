@@ -20,7 +20,7 @@ func CheckUser(c *fiber.Ctx) error {
 	})
 }
 
-func GetInfo(c *fiber.Ctx) error { // 유저 정보를 가져오는 컨트롤러
+func GetInfo(c *fiber.Ctx) error {
 	jwtClaims := c.Locals("jwtClaims").(utils.AuthTokenClaims)
 	user := model.User{}
 	userUUID, err := uuid.Parse(jwtClaims.UserID)
