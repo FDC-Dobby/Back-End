@@ -1,5 +1,5 @@
 # isfree backend
-![backend-tech](./assets/backendTechStack.jpeg)
+![backend-tech](./assets/backendTechStack.jpeg)  
 This project uses AWS Lambda and Go Fiber together which is a very unique combination and was a very interesting and fun experience to make.
 
 ## AWS Lambda
@@ -22,7 +22,7 @@ Fiber is Go's web framework, inspired by nodejs's Express, and equipped with Gol
 Amazon CloudWatch was used to catch errors that were made after deploying it to aws lambda and testing it.
 
 ## IAM Roles
-Used IAM Roles to efficiently collaborate with our team.
+Used IAM Roles to efficiently collaborate with our team.  
 
 # Build Project
 You need to go to root directory of the project.  
